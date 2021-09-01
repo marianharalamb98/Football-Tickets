@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="shortcut icon" href="Resurse/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="still.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </link>
+</head>
+
+<body onload="drawChart()">
+    <header>
+        <h1>
+            Bilete Liga 1
+        </h1>
+    </header>
+    <nav>
+       <div class="menu">
+        <button onclick="location.href='/acasa'" type="button">Acasa</button>
+        <button onclick="location.href='/lista'" type="button">Lista Meciuri</button>
+        <button onclick="location.href='/sondaj'" type="button">Sondaj Informativ</button>
+        <button onclick="location.href='/diagrama'" type="button">Rezultat Sondaj</button>
+        <button onclick="location.href='/informatii'" type="button">Informatii utile</button>
+        <button onclick="location.href='/galerie'" type="button">Galerie</button>
+        <button onclick="location.href='/contact'" type="button">Contact</button>
+       </div>
+    </nav>
+    <main id="content">
+        <%- body -%>
+        <br>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

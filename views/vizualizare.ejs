@@ -1,0 +1,29 @@
+<head>
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <div id="verificare" class="verif">Numarul de bilete este:</div>
+    <script>
+        var url = window.location.href;
+        var arrayul = url.split("?");
+        total = arrayul[1];
+        vip = arrayul[2];
+        trib = arrayul[3];
+        pel = arrayul[4];
+        plat=arrayul[5];
+        var total_nr = total.split("=");
+        var vip_nr = vip.split("=");
+        var trib_nr = trib.split("=");
+        var pel_nr = pel.split("=");
+        var plat_nr=plat.split("=");
+        console.log(total_nr);
+        $(".verif").text("Ati selectat un numar de: " + total_nr[1] + " bilete, din care  " + vip_nr[1] + " vip, " + trib_nr[1] + " tribune, " + pel_nr[1] + " peluza. Si aveti de plata: "+plat_nr[1]+' de lei + 10 lei(costul livrarii).');
+    </script>
+    <p>
+        <form method="GET" action="/final">
+        <button  id="Continue" type="submit">Continua</button>
+        </p>
+
+</body>

@@ -1,0 +1,83 @@
+
+h1{
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+
+nav {
+    background-color: rgb(173, 230, 181);
+    padding: 35px;
+    text-align:center;
+}
+.livrare{
+    text-align:center;
+}
+
+nav a{
+    padding-right: 80px;
+    text-decoration: underline;
+    font-weight: bold;
+    color:blue;
+    font-size: 130%;
+  }
+nav a:hover {
+    color:black;
+}
+nav a:visited {
+    color:purple;
+}
+nav a:active{
+    color:red;
+}   
+
+body {
+    background-color:white;
+}
+.menu li{
+    display: inline-block;
+}
+
+.messagePanel { border: solid 1px black; width: 935px; height: 935px; }
+
+.seat {
+    
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: solid 1px black;
+    float: left;
+    
+    
+}
+
+.clearfix { clear: both;}
+.vip {
+    background-color: #96c131;
+}
+.peluza{
+    background-color: #3133c1;
+}
+.tribuna{
+    background-color: #31b7c1;
+}
+
+.hovering{
+	background-color: #ae59b3;
+}
+.selected{
+    background-color: red;
+}
+.stadium{
+    background-color: black;
+}
+.current{
+    background-color: orange;
+}
+.linie{
+    background-color: white;
+}
+.coloana{
+    background-color: white;
+}

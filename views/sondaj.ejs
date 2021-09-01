@@ -1,0 +1,21 @@
+<h2>Acest sondaj are scop informativ pentru a avea o statistica asupra persoanelor care frecventeaza site-ul nostru.</h2>
+
+
+<form method="POST" action="/rezultat-sondaj" class="form">
+    <h3>Lista intrebari</h3>
+    <% for(let i = 0; i < intrebari.length; ++i) { %>
+        <section class="question">
+            <p><%= intrebari[i].intrebare %></p>
+            <% for(let j = 0; j < intrebari[i].variante.length; ++j) { %>
+                <label>
+                    <%= intrebari[i].variante[j] %></label>
+                    <input type="radio" name="<%=i%>" value="<%= intrebari[i].variante[j] %>">
+                    <br>
+                    <% } %>
+                    <% } %>
+    <button onclick="rezultatSondaj()" type="submit" value="Submit">Submit</button>
+
+    
+   
+</form>
+

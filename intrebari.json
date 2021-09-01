@@ -1,0 +1,26 @@
+[
+    {
+        "intrebare": "Cand ati participat(ca spectator) ultima data la o partida din Liga 1? ",
+        "variante": ["Anul acesta", "Anul trecut", "Acum mai mult de 2 ani", "Niciodata"]
+    },
+    {
+        "intrebare": "In partea a doua a campionatului, ce grupa preferati sa o vizionati?",
+        "variante": ["Retrogradare", "Campionat"]
+    },
+    {
+        "intrebare": "Unde preferati sa vizionati meciurile?",
+        "variante": ["Acasa", "Pe stadion", "In oras"]
+    },
+    {
+        "intrebare": "Cine credeti ca merita sa castige campionatul anul acesta?",
+        "variante": ["CFR Cluj ", "FCSB", "Univ. Craiova", "Astra Giurgiu","FC Botoșani","Gaz Metan Mediaș"]
+    },
+    {
+        "intrebare": "Cine credeti ca ar merita sa retrogradeze?",
+        "variante": ["FC Voluntari", "Chindia Târgoviște", "Academica Clinceni", "Poli Iași","Dinamo București","FC Hermannstadt","FC Viitorul"]
+    },
+    {
+        "intrebare": "Sunteti fan al unei echipe din Liga 1?",
+        "variante": ["Da", "Nu"]
+    }
+]

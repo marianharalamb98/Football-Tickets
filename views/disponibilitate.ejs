@@ -1,0 +1,61 @@
+<head>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="detalii"></div>
+    <p style="text-align:left;">
+        Selectati locurile:
+        <span style="float:right;">
+            Distributia locurilor:
+        </span>
+    </p>
+    <p style="text-align:left;">
+        -locuri disponibile = locurile verzi + albastre
+        <span style="float:right;">
+            -Vip, primele 2 randuri(si coloane) in jurul stadionului, culoarea verde
+        </span>
+    </p>
+    <p style="text-align:left;">
+        -locuri ocupate = locurile rosii
+        <span style="float:right;">
+            -peluza, urmatoarele 3 randuri(si coloane) in jurul stadionului, culoarea albastru inchis
+        </span>
+    </p>
+    <p style="text-align:left;">
+        -teren = locurile negre
+        <span style="float:right;">
+            -tribuna,restul locurilor ramase, culoarea albastru deschis
+        </span>
+    </p>
+    <p style="text-align:left;">
+        -locurile selectate = locurile portocalii
+        <span style="float:right;"></span>
+    </p>
+    </div>
+    <div id="dialog_title_span" class="bilete">Numarul de bilete este:</div>
+    <script>
+        var url=window.location.href;
+        var arrayul=url.split("?");
+        vip=arrayul[1];
+        trib=arrayul[2];
+        pel=arrayul[3];
+        var vip_nr=vip.split("=");
+        var trib_nr=trib.split("=");
+        var pel_nr=pel.split("=");
+       
+
+        $(".bilete").text("Va rugam sa selectati: " + vip_nr[1]+" bilet/e vip, "+trib_nr[1]+" bilet/e tribune, " + pel_nr[1] +" bilet/e peluza.");
+    </script>
+    <p>
+
+
+
+
+    <p>
+        <button id="btnSeating">Incarcare locuri </button>
+    <div id="messagePanel" class="messagePanel"></div>
+
+<button  id="butCom" type="submit">Comanda bilete</button>
+</p>
+</body>
